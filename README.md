@@ -10,6 +10,7 @@ This project demonstrates how to create an interactive accordion component using
 
 ## 📸 Preview
 <img width="1917" height="867" alt="Image" src="https://github.com/user-attachments/assets/897fa858-31e3-4860-b53d-ea0ad4247b73" />
+<img width="1900" height="862" alt="Image" src="https://github.com/user-attachments/assets/697c70f6-a6d8-4c5c-bd20-d9ebb41611cf" />
 
 ## ✨ Features
 
