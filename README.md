@@ -9,6 +9,7 @@ This project demonstrates how to create an interactive accordion component using
 🔗 https://behrokh-dev.github.io/Accordion-Menu/
 
 ## 📸 Preview
+<img width="1917" height="867" alt="Image" src="https://github.com/user-attachments/assets/897fa858-31e3-4860-b53d-ea0ad4247b73" />
 
 ## ✨ Features
 
