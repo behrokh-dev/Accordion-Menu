@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base{
+    body{
+        @apply min-h-screen  flex flex-col justify-center items-center bg-fixed bg-[radial-gradient(circle_at_top_left,#0A66C2_0%,#5b93d6_40%,#dceafb_75%,#ffffff_100%)]
+    }
+}
+
+@layer components{
+    .Accard-Menu{
+        @apply w-11/12 md:w-[70%] lg:w-[60%] mx-auto flex flex-col 
+    }
+    .para-li{
+        @apply overflow-hidden rounded-2xl  bg-white backdrop-blur-xl  border border-slate-200  relative transition-all duration-500 ease-out hover:border-[#0A66C2]/30 
+    }
+    .title-h2{
+        @apply  text-[16px] text-[#0A66C2] md:text-2xl bg-[#0A66C2]/8  px-5 py-4 md:px-7 md:py-5 font-bold select-none flex items-center justify-between gap-4  border border-[#0A66C2]/20 rounded-2xl transition-all duration-500 ease-out hover:text-[#0A66C2]
+    }
+    .paragraph{
+        @apply text-[13.5px] md:text-base leading-relaxed px-5 md:px-7 text-slate-800 border-t border-transparent transition-[height] duration-500 ease-in-out    overflow-hidden
+    }
+
+
+
+        /* وقتی آکاردئون بازه: آیکون میچرخه و پر می‌شه */
+    .para-li:has(p[data-status="on"]) .title-h2 i{
+        @apply rotate-90 bg-[#0A66C2] text-white border-[#0A66C2]
+        shadow-[0_0_0_4px_rgba(10,102,194,0.12)];
+    }
+
+    .para-li:has(p[data-status="on"]) .title-h2{
+        @apply text-[#0A66C2];
+    }
+
+    .para-li:has(p[data-status="on"]){
+        @apply border-[#0A66C2]/40
+        shadow-[0_6px_24px_rgba(10,102,194,0.15)];
+    }
+
+
+    /* /////////////footer////////////// */
+ .app-footer{
+    @apply w-11/12 md:w-[70%] lg:w-[60%] mx-auto mt-6 mb-10
+    flex flex-col sm:flex-row items-center justify-between gap-3
+    bg-[#bad7f5] border border-slate-200 rounded-2xl
+    px-4 py-3 md:px-6 md:py-4;
+}
+.footer-user{
+    @apply flex items-center gap-3;
+}
+.footer-avatar{
+    @apply w-15 h-15 md:w-21 md:h-21 rounded-full object-cover
+    border border-[#0A66C2]/20;
+}
+.footer-name{
+    @apply text-[13px] md:text-[20px] font-bold text-[#0C447C] leading-tight;
+}
+.footer-role{
+    @apply text-[11px] md:text-xs text-slate-600 leading-tight;
+}
+.footer-socials{
+    @apply flex items-center gap-4 text-2xl text-[#0A66C2];
+}
+.footer-socials a{
+    @apply transition-all duration-300 ease-out hover:scale-130 hover:text-[#0C447C];
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* npx @tailwindcss/cli -i ./src/assets/stylesheet/main.css -o ./src/assets/stylesheet/output.css --watch */
